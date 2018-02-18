@@ -1,4 +1,4 @@
-# tower to let Project
+# Lost and Found
 
 ### Feature
 * Comming Soon
@@ -33,11 +33,11 @@ Clone with HTTPS
 Use Git or checkout with SVN using the web URL.
 
 ```sh
-https://github.com/sarkaromar/tower.git
+https://github.com/sarkaromar/lostnfound.git
 ```
 
 ```sh
-cd tower/
+cd lostnfound/
 $ npm install
 ```
 
