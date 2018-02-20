@@ -209,6 +209,11 @@ header{
 		}
 	}
 }
+.lost-list{
+	.lost-i{
+		border-right: 0px !important;
+	}
+}
 .filter-sec{
 	padding: 30px 0;
 	background: $light-gray;
@@ -232,7 +237,7 @@ header{
 }
 .form-control {
 	border-radius: 0 !important;
-	height: 40px !important;
+	min-height: 40px !important;
 }
 .sucscribe{
 	.btn-search{
@@ -463,6 +468,58 @@ header{
 		padding: 0 15px;
 	}
 }
+
+.details-sec{
+	margin: 50px 0;
+	.title{
+		color: $gray;
+		font-size: 28px;
+		span{
+			color: $light-gray;
+			text-transform: uppercase;
+		}
+	}
+	.cate{
+		color: $light-gray;
+		font-size: 14px;
+	}
+	.details{
+		dt{
+			color: $light-gray;
+			text-transform: uppercase;
+		}
+	}
+	.desc{
+		span{
+			color: $light-gray;
+			text-transform: uppercase;
+			clear: both;
+			display: block;
+			font-weight: bold;
+		}
+	}
+	.details-img{
+		img{
+			width: 100%;
+		}
+	}
+	.contact{
+		font-size: 15px;
+		margin-top: 20px;
+		color: $light-gray;
+		text-transform: uppercase;
+		font-weight: bold;
+	}
+}
+#map {
+	height: 400px;
+	width: 100%;
+   }
+.title-similar{
+	text-align: center;
+	color: $light-gray;
+	text-transform: uppercase;
+}
 .reward{
 	padding: 25px 0;
 	display: block;
@@ -504,16 +561,31 @@ header{
 		}
 
 	}
-	ul.social-link{
-		li{
-			list-style: none;
-			float: left;
-			a{
-				padding-right: 10px;
-			}
+	
+}
+.share-this-item{
+	h4{
+		font-size: 16px;
+		color: $light-gray;
+		text-transform: uppercase;
+		margin-top: 15px;
+		font-weight: bold;
+	}
+}
+ul.social-link{
+	margin: 0;
+	padding: 0;
+	li{
+		list-style: none;
+		float: left;
+		color: $light-gray;
+		a{
+			padding-right: 10px;
 		}
 	}
-	
+}
+.report{
+	margin: 50px 0;
 }
 .footer-bottom{
 	background: $dark;

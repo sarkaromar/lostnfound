@@ -1,23 +1,16 @@
-// $('#carouselExample').on('slide.bs.carousel', function (e) {
-
-//     var $e = $(e.relatedTarget);
-//     var idx = $e.index();
-//     var itemsPerSlide = 4;
-//     var totalItems = $('.carousel-item').length;
-    
-//     if (idx >= totalItems-(itemsPerSlide-1)) {
-//         var it = itemsPerSlide - (totalItems - idx);
-//         for (var i=0; i<it; i++) {
-//             // append slides to end
-//             if (e.direction=="left") {
-//                 $('.carousel-item').eq(i).appendTo('.carousel-inner');
-//             }
-//             else {
-//                 $('.carousel-item').eq(0).appendTo('.carousel-inner');
-//             }
-//         }
-//     }
-// });
+function initMap() {
+    var lat = 23.7449458;
+    var lng = 90.3889624;
+    var uluru = {lat: lat, lng: lng};
+    var map = new google.maps.Map(document.getElementById('map'), {
+        zoom: 15,
+        center: uluru
+    });
+    var marker = new google.maps.Marker({
+        position: uluru,
+        map: map
+    });
+};
 
 $('.res-point a, .overly').click(function(){
     $('.main-nav').animate({
