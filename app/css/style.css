@@ -92,7 +92,7 @@ header {
           color: #03A9F4; }
 
 .logo {
-  padding: 50px 0;
+  padding: 25px 0;
   text-align: center;
   font-family: 'Frijole', cursive; }
   .logo a {
@@ -215,7 +215,6 @@ header {
   font-size: 24px;
   padding: 25px;
   margin: 0px;
-  background: rgba(0, 0, 0, 0.2);
   color: #ffffff;
   text-transform: uppercase;
   -webkit-transition: all .5s ease;
@@ -226,10 +225,10 @@ header {
       padding: 10px; } }
 
 .search a {
-  background: rgba(0, 0, 0, 0.2) !important;
+  background: rgba(1, 88, 155, 0.3) !important;
   display: block;
-  padding: 50px;
-  margin: 25px 150px;
+  padding: 15px;
+  margin: 25px 50px;
   text-decoration: none;
   -webkit-transition: all .5s ease;
   transition: all .5s ease; }
@@ -248,9 +247,9 @@ header {
       transition: all .5s ease; }
 
 .search .lost-search {
-  padding: 25px;
+  padding: 15px 25px;
   margin: 25px;
-  background: rgba(17, 17, 17, 0.2);
+  background: rgba(1, 88, 155, 0.3) !important;
   position: relative; }
   .search .lost-search h3 {
     color: #ffffff; }
@@ -263,7 +262,7 @@ header {
     position: absolute;
     pointer-events: none;
     border-color: rgba(136, 183, 213, 0);
-    border-bottom-color: rgba(17, 17, 17, 0.2);
+    border-bottom-color: rgba(1, 88, 155, 0.3) !important;
     border-width: 50px;
     margin-left: -25px; }
   .search .lost-search .btn-search {
@@ -491,3 +490,26 @@ ul.social-link {
   animation-delay: 2.5s; }
 
 /* Carousel */
+.blog-list {
+  background: #eee;
+  padding: 15px;
+  margin-bottom: 15px; }
+  .blog-list img {
+    width: 100%; }
+
+.blog-right h4 {
+  background: #01579B;
+  color: #ffffff;
+  padding: 10px;
+  margin-bottom: 15px; }
+
+.blog-right .recent-blog {
+  background: #eee;
+  padding: 5px;
+  margin-bottom: 10px; }
+  .blog-right .recent-blog img {
+    float: left;
+    width: 96px;
+    margin-right: 10px; }
+  .blog-right .recent-blog a {
+    color: #01579B; }
