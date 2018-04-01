@@ -170,13 +170,6 @@ header{
 		}
 	}
 }
-.search {
-    position: absolute;
-    z-index: 9;
-    top: 230px;
-    left: 355px;
-    right: 355px;
-}
 .subpage-nav{
 	height: 110px;
     position: absolute;
@@ -402,25 +395,25 @@ section.main-body {
 	}
 	.lost-search{
 		padding: 15px 25px;
-		margin: 25px;
+		// margin: 25px;
 		background: rgba(1, 88, 155, 0.5)!important;
 		position: relative;
 		h3{
 			color: $light;
 		}
-		&:after {
-			bottom: 100%;
-			border: solid transparent;
-			content: " ";
-			height: 0;
-			width: 0;
-			position: absolute;
-			pointer-events: none;
-			border-color: rgba(136,183,213,0);
-			border-bottom-color: rgba(1, 88, 155, 0.5)!important;
-			border-width: 50px;
-			margin-left: -25px;
-		}
+		// &:after {
+		// 	bottom: 100%;
+		// 	border: solid transparent;
+		// 	content: " ";
+		// 	height: 0;
+		// 	width: 0;
+		// 	position: absolute;
+		// 	pointer-events: none;
+		// 	border-color: rgba(136,183,213,0);
+		// 	border-bottom-color: rgba(1, 88, 155, 0.5)!important;
+		// 	border-width: 50px;
+		// 	margin-left: -25px;
+		// }
 		.btn-search{
 			margin-top: 45px;
 		}
