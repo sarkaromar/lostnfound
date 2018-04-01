@@ -1,7 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Bungee+Inline|Freckle+Face|Frijole|Monoton");
 header {
   background: url("../images/header-bg.jpg") no-repeat center top fixed;
-  padding-bottom: 25px;
   -webkit-background-size: cover;
   background-size: cover; }
 
@@ -43,53 +42,52 @@ header {
   .res-point a:hover {
     color: #ffffff; }
 
-.main-nav {
-  height: 45px; }
-  @media (max-width: 575.98px) {
-    .main-nav {
-      display: none;
-      height: 100vh;
-      position: fixed;
-      z-index: 11;
+@media (max-width: 575.98px) {
+  .main-nav {
+    display: none;
+    height: 100vh;
+    position: fixed;
+    z-index: 11;
+    left: 0;
+    right: 0;
+    top: 0; }
+    .main-nav .overly {
+      position: absolute;
       left: 0;
       right: 0;
-      top: 0; }
-      .main-nav .overly {
-        position: absolute;
-        left: 0;
-        right: 0;
-        top: 0;
-        bottom: 0;
-        z-index: 10;
-        height: 100vh !important;
-        background: rgba(0, 0, 0, 0.5); } }
-  .main-nav ul {
-    margin: 0;
-    padding: 0;
-    float: right; }
+      top: 0;
+      bottom: 0;
+      z-index: 10;
+      height: 100vh !important;
+      background: rgba(0, 0, 0, 0.5); } }
+
+.main-nav ul {
+  margin: 0;
+  padding: 0;
+  float: right; }
+  @media (max-width: 575.98px) {
+    .main-nav ul {
+      position: absolute;
+      z-index: 11;
+      left: 0;
+      height: 100vh;
+      background: #01579B;
+      min-width: 50%; } }
+  .main-nav ul li {
+    float: left;
+    list-style: none; }
     @media (max-width: 575.98px) {
-      .main-nav ul {
-        position: absolute;
-        z-index: 11;
-        left: 0;
-        height: 100vh;
-        background: #01579B;
-        min-width: 50%; } }
-    .main-nav ul li {
-      float: left;
-      list-style: none; }
-      @media (max-width: 575.98px) {
-        .main-nav ul li {
-          float: none;
-          border-bottom: 1px solid #004e8c; } }
-      .main-nav ul li a {
-        text-decoration: none;
-        color: #ffffff;
-        padding: 10px 15px;
-        display: block;
-        font-size: 14px; }
-        .main-nav ul li a:hover {
-          color: #03A9F4; }
+      .main-nav ul li {
+        float: none;
+        border-bottom: 1px solid #004e8c; } }
+    .main-nav ul li a {
+      text-decoration: none;
+      color: #ffffff;
+      padding: 10px 15px;
+      display: block;
+      font-size: 14px; }
+      .main-nav ul li a:hover {
+        color: #03A9F4; }
 
 .logo {
   padding: 25px 0;
@@ -99,7 +97,7 @@ header {
     text-decoration: none;
     color: #ffffff !important;
     display: block;
-    width: 300px;
+    width: 270px;
     margin: 0 auto; }
     .logo a:hover {
       text-decoration: none; }
@@ -113,11 +111,24 @@ header {
     .logo svg g.svg-logo {
       fill: #fff; }
 
+.search {
+  position: absolute;
+  z-index: 9;
+  top: 230px;
+  left: 355px;
+  right: 355px; }
+
 .subpage-nav {
-  height: 90px; }
+  height: 110px;
+  position: absolute;
+  z-index: 1;
+  background: rgba(1, 87, 155, 0.5); }
   @media (min-width: 575.99px) {
     .subpage-nav .main-nav ul {
       margin-top: 35px; } }
+
+section.main-body {
+  padding-top: 110px; }
 
 .report-sec .report-btn {
   display: block;
@@ -163,6 +174,54 @@ header {
     padding: 0;
     margin: 0;
     text-transform: uppercase; }
+
+.profile-detals {
+  background: #cccccc; }
+  .profile-detals img {
+    width: 100%;
+    padding: 15px; }
+  .profile-detals h3 {
+    text-align: center;
+    font-size: 18px;
+    color: #333333; }
+  .profile-detals .account-nav ul {
+    margin: 0;
+    padding: 0; }
+    .profile-detals .account-nav ul li {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      width: 100%; }
+      .profile-detals .account-nav ul li a {
+        display: block;
+        padding: 5px;
+        background: #ffffff;
+        border-bottom: 1px solid #cccccc;
+        border-left: 1px solid #cccccc;
+        border-right: 1px solid #cccccc;
+        color: #333333; }
+        .profile-detals .account-nav ul li a:hover {
+          background: #cccccc;
+          text-decoration: none;
+          color: #111111; }
+
+.account-body {
+  margin-top: 30px;
+  border: 1px solid #cccccc; }
+  .account-body .title {
+    padding: 10px 15px;
+    background: #cccccc;
+    font-size: 20px;
+    text-transform: uppercase; }
+  .account-body .contant-area {
+    padding: 15px; }
+  .account-body .update-area {
+    padding: 15px;
+    padding-top: 30px; }
+
+.btn {
+  -webkit-border-radius: 0px !important;
+  border-radius: 0px !important; }
 
 .form-control {
   -webkit-border-radius: 0 !important;
@@ -225,7 +284,7 @@ header {
       padding: 10px; } }
 
 .search a {
-  background: rgba(1, 88, 155, 0.3) !important;
+  background: rgba(1, 88, 155, 0.5) !important;
   display: block;
   padding: 15px;
   margin: 25px 50px;
@@ -249,7 +308,7 @@ header {
 .search .lost-search {
   padding: 15px 25px;
   margin: 25px;
-  background: rgba(1, 88, 155, 0.3) !important;
+  background: rgba(1, 88, 155, 0.5) !important;
   position: relative; }
   .search .lost-search h3 {
     color: #ffffff; }
@@ -262,7 +321,7 @@ header {
     position: absolute;
     pointer-events: none;
     border-color: rgba(136, 183, 213, 0);
-    border-bottom-color: rgba(1, 88, 155, 0.3) !important;
+    border-bottom-color: rgba(1, 88, 155, 0.5) !important;
     border-width: 50px;
     margin-left: -25px; }
   .search .lost-search .btn-search {
