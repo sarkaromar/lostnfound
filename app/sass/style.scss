@@ -39,8 +39,8 @@
 
 header{
 	background: url("../images/header-bg.jpg") no-repeat center top fixed;
-	// padding-bottom: 25px;
 	background-size: cover;
+	min-height: 142px;
 }
 .search{
 	position: absolute;
@@ -188,9 +188,6 @@ header{
 		 }
 	}
 }
-section.main-body {
-    padding-top: 110px;
-}
 
 
 .main-body-sec{
@@ -310,11 +307,12 @@ section.main-body {
 }
 .filter-sec{
 	padding: 30px 0;
-	background: $light-gray;
+	background: $primary;
 	border-top: 4px solid $primary;
 	.title{
 		margin-top: 40px;
 		font-size: 22px;
+		color: $light;
 		@media (max-width: 575.98px) { 
 			margin-top: 0px;
 			text-align: center;
@@ -323,7 +321,7 @@ section.main-body {
 
 	h3{
 		font-size: 18px;
-		color: $gray;
+		color: $light;
 		padding: 0;
 		margin: 0;
 		text-transform: uppercase;

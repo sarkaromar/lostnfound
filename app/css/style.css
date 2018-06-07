@@ -2,7 +2,8 @@
 header {
   background: url("../images/header-bg.jpg") no-repeat center top fixed;
   -webkit-background-size: cover;
-  background-size: cover; }
+  background-size: cover;
+  min-height: 142px; }
 
 .search {
   position: absolute;
@@ -127,9 +128,6 @@ header {
     .subpage-nav .main-nav ul {
       margin-top: 35px; } }
 
-section.main-body {
-  padding-top: 110px; }
-
 .main-body-sec {
   background: #ffffff;
   padding: 100px 0; }
@@ -215,18 +213,19 @@ section.main-body {
 
 .filter-sec {
   padding: 30px 0;
-  background: #cccccc;
+  background: #01579B;
   border-top: 4px solid #01579B; }
   .filter-sec .title {
     margin-top: 40px;
-    font-size: 22px; }
+    font-size: 22px;
+    color: #ffffff; }
     @media (max-width: 575.98px) {
       .filter-sec .title {
         margin-top: 0px;
         text-align: center; } }
   .filter-sec h3 {
     font-size: 18px;
-    color: #333333;
+    color: #ffffff;
     padding: 0;
     margin: 0;
     text-transform: uppercase; }

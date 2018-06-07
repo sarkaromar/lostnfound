@@ -45,19 +45,19 @@ var sass          = require('gulp-sass'),
     gulp.task('sass', function(){
       return gulp.src('app/sass/*.scss')
         .pipe(sass())
-        .pipe(plumber())
         .pipe(autoprefixer({
           browsers: ['Android >= 2.1',
-                     'Chrome >= 21',
-                     'Edge >= 12',
-                     'Explorer >= 7',
-                     'Firefox >= 17',
-                     'Opera >= 12.1',
-                     'Safari >= 6.0'],
+          'Chrome >= 21',
+          'Edge >= 12',
+          'Explorer >= 7',
+          'Firefox >= 17',
+          'Opera >= 12.1',
+          'Safari >= 6.0'],
           cascade: false}))
-        .pipe(gulp.dest('app/css'))
-        .pipe(cssmin())
-        .pipe(rename({suffix: '.min'}))
+          .pipe(plumber())
+          .pipe(gulp.dest('app/css'))
+          .pipe(cssmin())
+          .pipe(rename({suffix: '.min'}))
         .pipe(gulp.dest('app/css'))
         .pipe(browserSync.reload({
           stream: true
