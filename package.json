@@ -5,7 +5,7 @@
   "main": "gulpfile.js",
   "dependencies": {
     "animate.css": "^3.6.1",
-    "bootstrap": "^4.0.0-beta",
+    "bootstrap": "^4.3.1",
     "gulp": "^3.9.1",
     "gulp-html-minifier": "^0.1.8",
     "gulp-watch": "^4.3.11",
